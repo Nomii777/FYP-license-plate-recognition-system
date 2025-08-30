@@ -1,0 +1,92 @@
+/* Custom styles to complement Bootstrap */
+
+/* General styles */
+body {
+    padding-top: 5px;
+    background-color: rgba(68, 171, 176, 0.7);
+}
+
+/* Card enhancements */
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar brand */
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Footer */
+footer {
+    padding: 2rem 0;
+}
+
+/* Custom button styles */
+.btn-outline-primary {
+    border-width: 2px;
+}
+
+/* Responsive image styles */
+.img-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form styles */
+.form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Alert customization */
+.alert {
+    border-radius: 0.5rem;
+}
+
+/* Table styles */
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    border-top: none;
+}
+
+/* Custom spacing */
+.mt-6 {
+    margin-top: 4rem !important;
+}
+
+.mb-6 {
+    margin-bottom: 4rem !important;
+}
+
+/* Download button styles */
+.btn-download {
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.btn-download i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Alert animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.alert {
+    animation: fadeIn 0.3s ease-out;
+}
