@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <h2 class="mb-4">Video Processing</h2>
+        
+        <div class="card">
+            <div class="card-header">
+                Upload Vehicle Video
+            </div>
+            <div class="card-body">
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="fileInput" class="form-label">Select a video file</label>
+                        <input class="form-control" type="file" id="fileInput" name="file" accept="video/*" required>
+                        <div class="form-text">Supported formats: MP4, AVI, MOV</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Process Video</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="card mt-4">
+            <div class="card-header">
+                How It Works
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>Upload a video containing vehicles with visible license plates</li>
+                    <li>Our system will process multiple frames from the video</li>
+                    <li>License plates will be detected in each frame</li>
+                    <li>Detected plates will be processed for text recognition</li>
+                    <li>Results will be displayed with the video and extracted text</li>
+                </ol>
+                <div class="alert alert-info">
+                    For best results, use videos with clear views of license plates and good lighting conditions.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

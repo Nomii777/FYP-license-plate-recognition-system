@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto text-center">
+        <h1 class="display-4 mb-4">License Plate Recognition System</h1>
+        <p class="lead mb-5">An advanced system for detecting and recognizing license plates from images and videos using computer vision techniques.</p>
+        
+        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+            <a href="{{ url_for('process_image') }}" class="btn btn-primary btn-lg px-4 gap-3">Process Image</a>
+            <a href="{{ url_for('process_video') }}" class="btn btn-outline-secondary btn-lg px-4">Process Video</a>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Image Processing</h5>
+                <p class="card-text">Upload an image of a vehicle to detect and recognize its license plate number.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+                <a href="{{ url_for('process_image') }}" class="btn btn-sm btn-outline-primary">Try Now</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Video Processing</h5>
+                <p class="card-text">Upload a video to detect and recognize license plates from multiple frames.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+                <a href="{{ url_for('process_video') }}" class="btn btn-sm btn-outline-primary">Try Now</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">High Accuracy</h5>
+                <p class="card-text">Our system uses advanced computer vision and OCR techniques for reliable results.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+                <a href="{{ url_for('about') }}" class="btn btn-sm btn-outline-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

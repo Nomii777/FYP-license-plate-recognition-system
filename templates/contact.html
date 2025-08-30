@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <h2 class="mb-4">Contact Us</h2>
+        
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Project Team</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body text-center">
+                                <!-- <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Team Member 1"> -->
+                                <h5>Nauman Rafique</h5>
+                                
+                                <p>
+                                    <strong>Email:</strong> nomiabaxii@gmail.com<br>
+                                    <strong>Phone:</strong> +92 313-1852074
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body text-center">
+                                <!-- <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Team Member 2"> -->
+                                <h5>Aizaz Ahmed</h5>
+                                
+                                <p>
+                                    <strong>Email:</strong> s.aizazahmed17@gmail.com<br>
+                                    <strong>Phone:</strong> +92 348-8191376
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Send Us a Message</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="nameInput" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="emailInput" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subjectInput" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subjectInput" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="messageInput" class="form-label">Message</label>
+                        <textarea class="form-control" id="messageInput" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

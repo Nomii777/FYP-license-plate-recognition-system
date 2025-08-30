@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <h2 class="mb-4">Image Processing</h2>
+        
+        <div class="card">
+            <div class="card-header">
+                Upload Vehicle Image
+            </div>
+            <div class="card-body">
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="fileInput" class="form-label">Select an image file</label>
+                        <input class="form-control" type="file" id="fileInput" name="file" accept="image/*" required>
+                        <div class="form-text">Supported formats: JPG, PNG, JPEG (Max 16MB)</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Process Image</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="card mt-4">
+            <div class="card-header">
+                How It Works
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>Upload an image containing a vehicle with a visible license plate</li>
+                    <li>Our system will detect the license plate region</li>
+                    <li>The detected plate will be processed for text recognition</li>
+                    <li>Results will be displayed with the original image and extracted text</li>
+                </ol>
+                <div class="alert alert-info">
+                    For best results, use clear images with the license plate visible and well-lit.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <h2 class="mb-4">About License Plate Recognition System</h2>
+        
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Project Overview</h4>
+                <p class="card-text">
+                    This License Plate Recognition System is a final year project developed as part of the Computer Science/Engineering curriculum. 
+                    The system utilizes advanced computer vision techniques to detect and recognize license plates from images and videos.
+                </p>
+                <p>
+                    The project aims to demonstrate the practical application of image processing, machine learning, and optical character recognition 
+                    in solving real-world problems related to vehicle identification and automated systems.
+                </p>
+            </div>
+        </div>
+        
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Technology Stack</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <strong>Flask</strong> - Python web framework for backend
+                            </li>
+                            <li class="list-group-item">
+                                <strong>OpenCV</strong> - Computer vision for plate detection
+                            </li>
+                            <li class="list-group-item">
+                                <strong>EasyOCR</strong> - Optical character recognition
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <strong>Bootstrap 5</strong> - Responsive frontend design
+                            </li>
+                            <li class="list-group-item">
+                                <strong>NumPy</strong> - Numerical computations
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Werkzeug</strong> - File upload handling
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">System Features</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Image Processing</h5>
+                                <p class="card-text">
+                                    Detect and recognize license plates from static images with high accuracy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Video Processing</h5>
+                                <p class="card-text">
+                                    Process video files to detect license plates across multiple frames.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">User-Friendly Interface</h5>
+                                <p class="card-text">
+                                    Intuitive web interface with responsive design for all devices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Results Visualization</h5>
+                                <p class="card-text">
+                                    Clear display of original media, detected plates, and recognized text.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Future Enhancements</h4>
+                <ul>
+                    <li>Integration with databases for plate number lookup</li>
+                    <li>Real-time processing from camera feeds</li>
+                    <li>Improved accuracy with deep learning models</li>
+                    <li>Multi-language support for different plate formats</li>
+                    <li>Mobile application version</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
