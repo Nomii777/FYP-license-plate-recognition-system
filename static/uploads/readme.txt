@@ -1,1 +1,1 @@
-process image or video shows in this folder
+File upload directory
