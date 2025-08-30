@@ -1,0 +1,5 @@
+python
+javascript
+flask
+opencv-ython
+easyocr
